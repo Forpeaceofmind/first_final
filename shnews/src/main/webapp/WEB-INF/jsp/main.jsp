@@ -15,7 +15,7 @@ body {
 }
 
 header {
-	background-color: #333;
+	background-color: #000;
 	color: #fff;
 	padding: 10px 20px;
 	display: flex;
@@ -52,8 +52,10 @@ nav ul li {
 footer {
 	background-color: #333;
 	color: #fff;
-	padding: 20px;
-	text-align: center;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 
 form {
@@ -102,6 +104,8 @@ form input[type="submit"] {
 			<c:if test="${not (param.authError eq null) }">
 			     <c:out value="${param.authError}" />
 			</c:if>
+			<a href="Controller?command=go_to_adding_page" class="btn btn-lg btn-danger btn-custom">Add news</a>
+		</div>
 			<a href="Controller?command=do_logout" class="btn btn-lg btn-danger btn-custom">Logout</a>
 		</div>
 	</header>
@@ -123,7 +127,7 @@ form input[type="submit"] {
 			<li><a href="#contact">Contact</a></li>
 			<li><a href="#help">Help</a></li>
 		</ul>
-		<img src="logotype.png" alt="Logotype">
+		<img src="img/shh_Logo.svg" alt="Logotype">
 	</footer>
 
 </body>

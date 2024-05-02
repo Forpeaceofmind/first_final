@@ -14,7 +14,7 @@ body {
 }
 
 header {
-	background-color: #333;
+	background-color: #000;
 	color: #fff;
 	padding: 10px 20px;
 	display: flex;
@@ -51,8 +51,10 @@ nav ul li {
 footer {
 	background-color: #333;
 	color: #fff;
-	padding: 20px;
-	text-align: center;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 </style>
 </head>
@@ -60,8 +62,6 @@ footer {
 
 	<header>
 		<nav>
-
-			<img src="/shnews/src/main/webapp/img/shh_Logo.png  " alt="Logotype">
 			<ul>
 				<li><a href="#top">Top</a></li>
 				<li><a href="#sport">Sport</a></li>
@@ -73,10 +73,10 @@ footer {
 			</ul>
 		</nav>
 		<div>
-			
-				<a href="Controller?command=go_to_sign_in_page">Sign in</a> <a
-					href="Controller?command=go_to_registration_page">Sign up</a>
-			
+
+			<a href="Controller?command=go_to_sign_in_page">Sign in</a> <a
+				href="Controller?command=go_to_registration_page">Sign up</a>
+
 		</div>
 	</header>
 
@@ -86,12 +86,14 @@ footer {
 	</div>
 
 	<footer>
-		<ul>
-			<li><a href="#about">About</a></li>
-			<li><a href="#contact">Contact</a></li>
-			<li><a href="#help">Help</a></li>
-		</ul>
-		<img src="/shnews/src/main/webapp/img/shh_Logo.png " alt="Logotype">
+		<nav>
+			<ul>
+				<li><a href="#about">About</a></li>
+				<li><a href="#contact">Contact</a></li>
+				<li><a href="#help">Help</a></li>
+			</ul>
+		</nav>
+		<img src="img/shh_Logo.svg" alt="Logotype">
 	</footer>
 
 </body>

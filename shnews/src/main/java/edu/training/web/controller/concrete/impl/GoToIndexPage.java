@@ -18,8 +18,8 @@ public class GoToIndexPage implements Command {
 	@Override
 	public void execute(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		List<News> mainNews = newsService.liveNews();
-		request.setAttribute("mainNews", mainNews);
+		List<News> liveNews = newsService.liveNews();
+		request.setAttribute("liveNews", liveNews);
 
 		RequestDispatcher dispatcher = request.getRequestDispatcher("WEB-INF/jsp/main_index.jsp");
 		dispatcher.forward(request, response);
