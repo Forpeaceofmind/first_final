@@ -94,9 +94,9 @@ form input[type="submit"] {
 				<li><a href="#top">Top</a></li>
 				<li><a href="#sport">Sport</a></li>
 				<li><a href="#political">Political</a></li>
-				<li><a href="#business">Business</a></li>
-				<li><a href="#weather">Weather</a></li>
-				<li><a href="#good-news">Good News</a></li>
+				<li><a href="Controller?command=go_to_business_page">Business</a>
+				<li><a href="Controller?command=show_the_weather">Weather</a></li>
+				<li><a href="Controller?command=go_to_goodnews_page">Good News</a></li>
 				<li><a href="#live">Live</a></li>
 			</ul>
 		</nav>
